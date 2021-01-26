@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wcenter/index/index",
+    "pages/wcenter/import/index",
+    "pages/wcenter/ceator/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "身份证钱包",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": false
+  },
+  "usingComponents": {
+    "l-toast": "/libs/lin-ui/toast/index",
+    "l-icon": "/libs/lin-ui/icon/index",
+    "l-message": "/libs/lin-ui/message/index",
+    "l-form": "/libs/lin-ui/form/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

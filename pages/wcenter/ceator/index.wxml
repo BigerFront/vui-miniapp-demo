@@ -1,0 +1,39 @@
+<!--pages/wcenter/ceator/index.wxml-->
+<l-message top="{{20}}"></l-message>
+<l-toast />
+<view class="v-container">
+  <view class="vpg-body">
+    <l-form name="creator" bind:linsubmit="createSubmit" tipType="message">
+      <lv-form-item name="pwd">
+        <l-input
+          type="password"
+          id="pwd"
+          bind:lininput="feildInputed"
+          hide-label
+          data-model="creator"
+          rules="{{pwdRules}}"
+          placeholder="输入密码"
+          showEye
+        >
+        </l-input>
+      </lv-form-item>
+      <lv-form-item name="repwd">
+        <l-input
+          type="password"
+          id="repwd"
+          bind:lininput="feildInputed"
+          hide-label
+          data-model="creator"
+          rules="{{confirmRules}}"
+          placeholder="再次输入"
+          showEye
+        >
+        </l-input>
+      </lv-form-item>
+
+      <lv-form-item slot="submit">
+        <l-button size="long">创建</l-button>
+      </lv-form-item>
+    </l-form>
+  </view>
+</view>
